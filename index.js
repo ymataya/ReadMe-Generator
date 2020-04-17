@@ -78,7 +78,7 @@ function promptUser() {
 function generateReadMe(answer) {
     return `
 # Badge:
-https://img.shields.io/badge/license-${answer.badge}-blue.svg
+![*GitHub license*](https://img.shields.io/badge/license-${answer.badge}-blue.svg)
 
 # Github Project: 
 https://github.com/${answer.username}/${answer.title.toLowerCase().split(" ").join("-")}
