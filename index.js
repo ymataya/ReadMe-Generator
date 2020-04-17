@@ -10,7 +10,13 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //Questions to ask user to fill out the README file//
 function promptUser() {
-    return inquirer.prompt([{
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "title",
+            message: "Provide a title for your project:"
+        },
+        {
             type: "list",
             name: "badge",
             message: "Please provide badges.",
@@ -18,24 +24,14 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "username",
-            message: "What's your Github username:"
-        },
-        {
-            type: "input",
-            name: "title",
-            message: "Provide a title for your project:"
-        },
-        {
-            type: "input",
             name: "description",
             message: "Describe your project:"
         },
-        {
-            type: "input",
-            name: "content",
-            message: "Create a table of contents:"
-        },
+        // {
+        //     type: "input",
+        //     name: "content",
+        //     message: "Create a table of contents:"
+        // },
         {
             type: "input",
             name: "install",
@@ -63,13 +59,18 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "picture",
-            message: "Paste the URL for your Github profile picture:"
+            name: "email",
+            message: "What is your Github email:"
         },
         {
             type: "input",
-            name: "email",
-            message: "What is your Github email:"
+            name: "username",
+            message: "What's your Github username:"
+        },
+        {
+            type: "input",
+            name: "picture",
+            message: "Paste the URL for your Github profile picture:"
         }
     ]);
 }
@@ -77,44 +78,52 @@ function promptUser() {
 //Generate the README by creating a template and filling it in with user answers//
 function generateReadMe(answer) {
     return `
-# Badge:
+
+# ${answer.title}
+
+## Badge:
 ![*GitHub license*](https://img.shields.io/badge/license-${answer.badge}-blue.svg)
 
-# Github Project: 
-https://github.com/${answer.username}/${answer.title.toLowerCase().split(" ").join("-")}
+## Project Description:
+### ${answer.description}
 
-# Live Link: 
-https://${answer.username}.github.io/${answer.title.toLowerCase().split(" ").join("-")}/
+## Table of Contents:
+### 1. Installation
+### 1. Usage
+### 1. Credit
+### 1. License
+### 1. Test
+### 1. Github Project
+### 1. Live Link
+### 1. Profile Picture
+### 1. Github Email
 
-# Project Title:
-${answer.title}
+## Installation:
+### ${answer.install}
 
-# Project Description:
-${answer.description}
+## Usage:
+### ${answer.usage}
 
-# Table of Contents:
-* ${answer.content}
+## Credits:
+### ${answer.credit}
 
-# Installation:
-${answer.install}
+## License:
+### ${answer.license}
 
-# Usage:
-${answer.usage}
+## Test:
+### ${answer.test}
 
-# Credits:
-${answer.credit}
+## Github Project: 
+### https://github.com/${answer.username}/${answer.title.toLowerCase().split(" ").join("-")}
 
-# License:
-${answer.license}
+## Live Link: 
+### https://${answer.username}.github.io/${answer.title.toLowerCase().split(" ").join("-")}/
 
-# Test:
-${answer.test}
+## Profile Picture: 
+![*Picture*](${answer.picture})
 
-# Profile Picture: 
-${answer.picture}
-
-# Github Email: 
-${answer.email}
+## Github Email: 
+### ${answer.email}
 `;
   }
 
