@@ -14,7 +14,7 @@ function promptUser() {
             type: "list",
             name: "badge",
             message: "Please provide badges.",
-            choices: ["MIT", "APACHE 2.0", "GPL 3.0", "none"] 
+            choices: ["MIT", "APACHE2.0", "GPL3.0", "none"] 
         },
         {
             type: "input",
