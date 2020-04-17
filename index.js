@@ -24,6 +24,11 @@ function promptUser() {
         },
         {
             type: "input",
+            name: "license",
+            message: "What license do you want for your project:"
+        },
+        {
+            type: "input",
             name: "description",
             message: "Describe your project:"
         },
@@ -46,11 +51,6 @@ function promptUser() {
             type: "input",
             name: "credit",
             message: "Give credit to those who helped you create this project, seperate them with commas:"
-        },
-        {
-            type: "input",
-            name: "license",
-            message: "What license do you want for your project:"
         },
         {
             type: "input",
@@ -109,13 +109,13 @@ function generateReadMe(answer) {
 #### ${answer.test}
 
 ## Github Project: 
-### https://github.com/${answer.username}/${answer.title.toLowerCase().split(" ").join("-")}
+#### https://github.com/${answer.username}/${answer.title.toLowerCase().split(" ").join("-")}
 
 ## Live Link: 
-### https://${answer.username}.github.io/${answer.title.toLowerCase().split(" ").join("-")}/
+#### https://${answer.username}.github.io/${answer.title.toLowerCase().split(" ").join("-")}/
 
 ## Github Email: 
-### ${answer.email}
+#### ${answer.email}
 
 ## Profile Picture: 
 ![*Picture*](${answer.picture})

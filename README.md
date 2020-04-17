@@ -24,19 +24,19 @@
 #### Users should use this whenever they are done coding their project and are ready to publish it live. By then, they would have all the information needed to answers the prompts that would create their ReadMe file.
 
 ## Contributing:
-#### Colin Gooddale, NPM Inquirer
+#### Colin Goodale (https://github.com/colingoodale), NPM Inquirer
 
 ## Test:
-#### 
+#### None
 
 ## Github Project: 
-### https://github.com/ymataya/readme-generator
+#### https://github.com/ymataya/readme-generator
 
 ## Live Link: 
-### https://ymataya.github.io/readme-generator/
+#### https://ymataya.github.io/readme-generator/
 
 ## Github Email: 
-### ylmataya@yahoo.com
+#### ylmataya@yahoo.com
 
 ## Profile Picture: 
 ![*Picture*](https://avatars0.githubusercontent.com/u/45080265?s=460&u=a1ffabbad5521f76487c91686a035752fb6e3565&v=4)
