@@ -35,27 +35,27 @@ function promptUser() {
         {
             type: "input",
             name: "install",
-            message: "Provide a step-by-step description of how to get the development environment running:"
+            message: "What is needed to be installed to run your project:"
         },
         {
             type: "input",
             name: "usage",
-            message: "Provide instructions and examples on how you want users to use your project:"
+            message: "Provide instructions on how you want users to use your project:"
         },
         {
             type: "input",
             name: "credit",
-            message: "List any help you got to create this project (contributors, third-party, tutorials, etc.): "
+            message: "Give credit to those who helped you create this project, seperate them with commas:"
         },
         {
             type: "input",
             name: "license",
-            message: "What can and cannot be done to your project:"
+            message: "What license do you want for your project:"
         },
         {
             type: "input",
             name: "test",
-            message: "Write tests for your application and provide examples on how to run them:"
+            message: "Write tests for your application:"
         },
         {
             type: "input",
@@ -80,22 +80,22 @@ function generateReadMe(answer) {
     return `
 # ${answer.title}
 
-## Badge:
-![*GitHub license*](https://img.shields.io/badge/license-${answer.badge}-blue.svg)
+## Badge and License:
+[![*${answer.license}*](https://img.shields.io/badge/license-${answer.badge}-blue.svg)]
 
 ## Project Description:
 ### ${answer.description}
 
 ## Table of Contents:
-### 1. [Installation](#installation)
+### 1. [Installation](##installation)
 ### 2. [Usage](#usage)
-### 3. [Credit] (#credits)
+### 3. [Contributing](#credits)
 ### 4. [License](#license)
-### 5. [Test] (#test)
-### 6. [Github Project] (#github-project)
-### 7. [Live Link] (#live-link)
-### 8. [Profile Picture] (#profile-picture)
-### 9. [Github Email] (#githum-email)
+### 5. [Test](#test)
+### 6. [Github Project](#github-project)
+### 7. [Live Link](#live-link)
+### 8. [Profile Picture](#profile-picture)
+### 9. [Github Email](#github-email)
 
 ## Installation:
 ### ${answer.install}
@@ -103,11 +103,8 @@ function generateReadMe(answer) {
 ## Usage:
 ### ${answer.usage}
 
-## Credits:
+## Contributing:
 ### ${answer.credit}
-
-## License:
-### ${answer.license}
 
 ## Test:
 ### ${answer.test}
@@ -118,11 +115,11 @@ function generateReadMe(answer) {
 ## Live Link: 
 ### https://${answer.username}.github.io/${answer.title.toLowerCase().split(" ").join("-")}/
 
-## Profile Picture: 
-![*Picture*](${answer.picture})
-
 ## Github Email: 
 ### ${answer.email}
+
+## Profile Picture: 
+![*Picture*](${answer.picture})
 `;
   }
 

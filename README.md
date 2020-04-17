@@ -1,46 +1,43 @@
 
-# ReadMe Generator
+# Readme Generator
 
-## Badge:
-![*GitHub license*](https://img.shields.io/badge/license-APACHE2.0-blue.svg)
+## Badge and License:
+[![*MIT*](https://img.shields.io/badge/license-MIT-blue.svg)]
 
 ## Project Description:
-### Using the
+### A generator that helps users create a readme file.
 
 ## Table of Contents:
-### 1. [Installation](#installation)
+### 1. [Installation](##installation)
 ### 2. [Usage](#usage)
-### 3. [Credit] (#credits)
+### 3. [Contributing](#credits)
 ### 4. [License](#license)
-### 5. [Test] (#test)
-### 6. [Github Project] (#github-project)
-### 7. [Live Link] (#live-link)
-### 8. [Profile Picture] (#profile-picture)
-### 9. [Github Email] (#githum-email)
+### 5. [Test](#test)
+### 6. [Github Project](#github-project)
+### 7. [Live Link](#live-link)
+### 8. [Profile Picture](#profile-picture)
+### 9. [Github Email](#github-email)
 
 ## Installation:
-### 
+### Inquirer
 
 ## Usage:
-### 
+### Just answer the prompts
 
-## Credits:
-### 
-
-## License:
-### 
+## Contributing:
+### Inquirer
 
 ## Test:
 ### 
 
 ## Github Project: 
-### https://github.com//readme-generator
+### https://github.com/ymataya/readme-generator
 
 ## Live Link: 
-### https://.github.io/readme-generator/
-
-## Profile Picture: 
-![*Picture*]()
+### https://ymataya.github.io/readme-generator/
 
 ## Github Email: 
-### 
+### ylmataya@yahoo.com
+
+## Profile Picture: 
+![*Picture*](sf)
