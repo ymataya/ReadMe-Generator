@@ -81,33 +81,32 @@ function generateReadMe(answer) {
 # ${answer.title}
 
 ## Badge and License:
-[![*${answer.license}*](https://img.shields.io/badge/license-${answer.badge}-blue.svg)]
+![*${answer.license}*](https://img.shields.io/badge/license-${answer.badge}-blue.svg)
 
 ## Project Description:
-### ${answer.description}
+#### ${answer.description}
 
 ## Table of Contents:
-### 1. [Installation](##installation)
+### 1. [Installation](#installation)
 ### 2. [Usage](#usage)
-### 3. [Contributing](#credits)
-### 4. [License](#license)
-### 5. [Test](#test)
-### 6. [Github Project](#github-project)
-### 7. [Live Link](#live-link)
+### 3. [Contributing](#contributing)
+### 4. [Test](#test)
+### 5. [Github Project](#github-project)
+### 6. [Live Link](#live-link)
+### 7. [Github Email](#github-email)
 ### 8. [Profile Picture](#profile-picture)
-### 9. [Github Email](#github-email)
 
 ## Installation:
-### ${answer.install}
+#### ${answer.install}
 
 ## Usage:
-### ${answer.usage}
+#### ${answer.usage}
 
 ## Contributing:
-### ${answer.credit}
+#### ${answer.credit}
 
 ## Test:
-### ${answer.test}
+#### ${answer.test}
 
 ## Github Project: 
 ### https://github.com/${answer.username}/${answer.title.toLowerCase().split(" ").join("-")}
