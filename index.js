@@ -78,7 +78,6 @@ function promptUser() {
 //Generate the README by creating a template and filling it in with user answers//
 function generateReadMe(answer) {
     return `
-
 # ${answer.title}
 
 ## Badge:
@@ -88,15 +87,15 @@ function generateReadMe(answer) {
 ### ${answer.description}
 
 ## Table of Contents:
-### 1. Installation
-### 1. Usage
-### 1. Credit
-### 1. License
-### 1. Test
-### 1. Github Project
-### 1. Live Link
-### 1. Profile Picture
-### 1. Github Email
+### 1. [Installation](#installation)
+### 2. [Usage](#usage)
+### 3. [Credit] (#credits)
+### 4. [License](#license)
+### 5. [Test] (#test)
+### 6. [Github Project] (#github-project)
+### 7. [Live Link] (#live-link)
+### 8. [Profile Picture] (#profile-picture)
+### 9. [Github Email] (#githum-email)
 
 ## Installation:
 ### ${answer.install}
